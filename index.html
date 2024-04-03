@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/postsList.css" />
+    <link rel="stylesheet" href="./css/sideCard.css" />
+    <link rel="stylesheet" href="./css/weekly.css" />
+
+    <title>DEV Community</title>
+  </head>
+  <body>
+    <header>
+      <div class="headerContainer">
+        <section class="hamburgerContainer">
+          <div class="hamburger">
+            <i class="fa-solid fa-bars" style="font-size: 25px"></i>
+          </div>
+          <img src="./assets/dev.png" class="logo" alt="logo" />
+          <div class="inputContainer">
+            <input
+              type="text"
+              id="search-input"
+              placeholder="Search..."
+              class="inputNav"
+            /><i
+              class="fa-solid fa-magnifying-glass inputGlass"
+              style="font-size: 20px"
+            ></i>
+          </div>
+        </section>
+        <section class="searchContainer">
+          <div class="search">
+            <i
+              class="fa-solid fa-magnifying-glass glassIcon"
+              style="font-size: 25px"
+            ></i>
+          </div>
+
+          <div class="logInHeader" id="logInHeader">
+            <a href="./views/login.html">Log in</a>
+          </div>
+          <a href="./views/registration.html" id="createAccountHeader"
+            >Create account</a
+          >
+          <div id="logOutButton">
+            <button class="logoutHeader" onclick="removeToken()">Logout</button>
+            <a href="./views/new.html"
+              ><button class="logoutHeader">Create Post</button></a
+            >
+            <i class="fa-regular fa-bell" style="font-size: 20px"></i>
+          </div>
+        </section>
+      </div>
+    </header>
+    <main>
+      <div class="mainContainer">
+        <aside class="asideLeft">
+          <section id="devCommunity" class="logInBox">
+            <h2 class="titleLogIn">
+              DEV Community is a community of 1,192,404 amazing developers
+            </h2>
+            <p>
+              We&#39;re a place where coders share, stay up-to-date and grow
+              their careers.
+            </p>
+            <div class="logInButtons">
+              <a href="./views/registration.html" id="createAccountBtn"
+                >Create account</a
+              >
+              <a href="./views/login.html" id="logInAside">Log In</a>
+            </div>
+          </section>
+          <nav class="asideNav">
+            <ul>
+              <li>
+                <a href="/"><i class="fa-solid fa-house"></i>Home</a>
+              </li>
+              <li>
+                <a href="/"><i class="fa-solid fa-microphone"></i>Podcasts</a>
+              </li>
+              <li>
+                <a href="/"><i class="fa-solid fa-video"></i>Video</a>
+              </li>
+              <li>
+                <a href="/"><i class="fa-solid fa-tag"></i>Tags</a>
+              </li>
+              <li>
+                <a href="/"><i class="fa-regular fa-lightbulb"></i>FAQ</a>
+              </li>
+              <li>
+                <a href="/"
+                  ><i class="fa-solid fa-bag-shopping"></i>Forem Shop</a
+                >
+              </li>
+              <li>
+                <a href="/"><i class="fa-brands fa-dev"></i>About</a>
+              </li>
+              <li>
+                <a href="/"><i class="fa-solid fa-circle-notch"></i>Contact</a>
+              </li>
+              <li>
+                <a href="/"><i class="fa-solid fa-book-open"></i>Guides</a>
+              </li>
+              <li>
+                <a href="/"
+                  ><i class="fa-regular fa-face-grimace"></i>Software
+                  comparisons</a
+                >
+              </li>
+            </ul>
+            <section class="other">
+              <h2>Other</h2>
+              <ul>
+                <li>
+                  <a href="/"
+                    ><i class="fa-regular fa-thumbs-up"></i>Code of Conduct</a
+                  >
+                </li>
+                <li>
+                  <a href="/"
+                    ><i class="fa-regular fa-face-laugh"></i>Privacy Policy</a
+                  >
+                </li>
+                <li>
+                  <a href="/"><i class="fa-regular fa-eye"></i>Terms of Use</a>
+                </li>
+              </ul>
+            </section>
+            <section class="asideIcons">
+              <i class="fa-brands fa-twitter"></i>
+
+              <a href="/"><i class="fa-brands fa-facebook"></i></a>
+
+              <a href="/"><i class="fa-brands fa-github"></i></a>
+
+              <a href="/"><i class="fa-brands fa-instagram"></i></a>
+
+              <a href="/"> <i class="fa-brands fa-twitch"></i></a>
+
+              <a href="/"><i class="fa-brands fa-mastodon"></i></a>
+            </section>
+            <br />
+          </nav>
+          <section class="popularTags">
+            <div class="popular">
+              <h2 class="titleLogIn">Popular Tags</h2>
+              <ul>
+                #webdev
+              </ul>
+              <ul>
+                #javascript
+              </ul>
+              <ul>
+                #programming
+              </ul>
+              <ul>
+                #beginners
+              </ul>
+              <ul>
+                #tutorial
+              </ul>
+              <ul>
+                #react
+              </ul>
+              <ul>
+                #python
+              </ul>
+              <ul>
+                #discuss
+              </ul>
+              <ul>
+                #productivity
+              </ul>
+              <ul>
+                #devops
+              </ul>
+              <ul>
+                #aws
+              </ul>
+              <ul>
+                #career
+              </ul>
+              <ul>
+                #opensource
+              </ul>
+              <ul>
+                #css
+              </ul>
+              <ul>
+                #news
+              </ul>
+              <ul>
+                #ai
+              </ul>
+              <ul>
+                #node
+              </ul>
+              <ul>
+                #html
+              </ul>
+              <ul>
+                #typescript
+              </ul>
+              <ul>
+                #codenewbie
+              </ul>
+              <ul>
+                #cloud
+              </ul>
+              <ul>
+                #testing
+              </ul>
+              <ul>
+                #java
+              </ul>
+              <ul>
+                #learning
+              </ul>
+              <ul>
+                #api
+              </ul>
+              <ul>
+                #database
+              </ul>
+              <ul>
+                #github
+              </ul>
+              <ul>
+                #security
+              </ul>
+              <ul>
+                #php
+              </ul>
+              <ul>
+                #android
+              </ul>
+            </div>
+          </section>
+
+          <section class="box1">
+            <div class="dots">
+              <p>DEV Community ...</p>
+            </div>
+
+            <h2 class="titleLogIn">
+              Discover the Benefits of DEV Organization Accounts!
+            </h2>
+            <p>
+              Explore the world of DEV Organization Accounts and unlock valuable
+              features to boost your online presence. Showcase your brand with
+              organization branding, engage with your audience, and gain
+              insights with advanced analytics.
+            </p>
+            <div class="logInButtons">
+              <a href="/" id="createAccountBtn"> Get started today!</a>
+            </div>
+          </section>
+        </aside>
+
+        <section class="heroSection">
+          <div class="middleNav">
+            <!--<a href="/"><strong>Relevant</strong></a>-->
+            <button id="relevant" class="filter-buttonr">
+              <strong>Relevant</strong>
+            </button>
+            <!--<a href="/">Latest </a>-->
+            <button id="latest" class="filter-button">Latest</button>
+            <button id="top" class="filter-button">Top</button>
+          </div>
+
+          <div id="first-post">
+            <img id="firstPostImage" src="" class="fullWidth" />
+          </div>
+
+          <div id="postsList"></div>
+        </section>
+
+        <!-- vero section -->
+        <section id="sideCardContainer" class="sideCardContainer"></section>
+      </div>
+    </main>
+  </body>
+  <script
+    src="https://kit.fontawesome.com/acd114ba49.js"
+    crossorigin="anonymous"
+  ></script>
+
+  <script src="/js/main.js" type="module"></script>
+
+  <script src="./js/login.js"></script>
+  <script src="./js/utils.js" type="module"></script>
+
+  <script type="module" src="./js/post.js"></script>
+
+  <script src="./js/search.js" type="module"></script>
+  <script src="./js/topFilter.js" type="module"></script>
+  <script src="./js/relevant.js" type="module"></script>
+  <script src="./js/latest.js" type="module"></script>
+</html>
